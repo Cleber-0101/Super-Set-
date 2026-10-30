@@ -1,0 +1,17 @@
+export {};
+
+const frase: string = "TypeScript e JavaScript";
+const textoComEspacos: string = "  exemplo de texto  ";
+
+console.log("length:", frase.length);
+console.log("toUpperCase:", frase.toUpperCase());
+console.log("toLowerCase:", frase.toLowerCase());
+console.log("includes:", frase.includes("JavaScript"));
+console.log("startsWith:", frase.startsWith("TypeScript"));
+console.log("endsWith:", frase.endsWith("JavaScript"));
+console.log("indexOf:", frase.indexOf("JavaScript"));
+console.log("slice:", frase.slice(0, 10));
+console.log("replace:", frase.replace("JavaScript", "TypeScript"));
+console.log("split:", frase.split(" "));
+console.log("trim:", textoComEspacos.trim());
+console.log("repeat:", "Oi! ".repeat(2));

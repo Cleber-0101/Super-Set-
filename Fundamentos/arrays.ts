@@ -27,3 +27,5 @@ const arrayAny: any[] = [1, 'dois', true, { nome: 'Alice' }];
 arrayAny.push(3.14);
 arrayAny.push('novo elemento');
 console.log(arrayAny); // Saída: [1, 'dois', true, { nome: 'Alice' }, 3.14, 'novo elemento']
+
+

@@ -42,6 +42,6 @@
     "moduleDetection": "legacy",
     "skipLibCheck": true,
   },
-  "include": ["Fundamentos/**/*.ts"],
+  "include": ["Fundamentos/**/*.ts", "conceitos/**/*.ts", "Desafios/**/*.ts"],
   "exclude": ["node_modules"]
 }

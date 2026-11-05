@@ -100,3 +100,36 @@ function exibirInformacoesPessoaInterface(pessoa: IPessoa): void {
         console.log(`Nome: ${pessoa.nome}, SobreNome: ${pessoa.sobreNome}, Idade: não informada`);
     }   
 }
+
+exibirInformacoesPessoaInterface({ nome: "Hannah", sobreNome: "Smith", idade: 28 }); // Saída: Nome: Hannah, SobreNome: Smith, Idade: 28
+exibirInformacoesPessoaInterface({ nome: "Ian" }); // Saída: Nome: Ian, SobreNome: undefined, Idade: não informada
+
+
+//literal types 
+let cor: "vermelho" | "verde" | "azul";
+
+cor = "vermelho";
+cor = "verde";
+cor = "azul"; 
+//cor = "PRETA"// VAI DAR ERRO PORQUE O TIPO LITERAL NÃO ACEITA OUTROS VALORES ALÉM DOS DEFINIDOS, NESSE CASO "vermelho", "verde" E "azul" SÃO OS ÚNICOS VALORES ACEITOS
+
+//USANDO LITERAL TYPES EM FUNÇÕES
+function exibirCor(cor: "vermelho" | "verde" | "azul"): void {
+    console.log(`A cor escolhida é: ${cor}`);
+}
+
+exibirCor("vermelho"); // Saída: A cor escolhida é: vermelho
+exibirCor("verde"); // Saída: A cor escolhida é: verde
+exibirCor("azul"); // Saída: A cor escolhida é: azul
+//exibirCor("preto"); // VAI DAR ERRO PORQUE O TIPO LITERAL NÃO ACEITA OUTROS VALORES ALÉM DOS DEFINIDOS, NESSE CASO "vermelho", "verde" E "azul" SÃO OS ÚNICOS VALORES ACEITOS
+
+
+
+// ultilizando non-null assertion operator em um codigo real
+let nome!: string; // O operador ! indica que a variável não será nula ou indefinida
+
+
+
+//symbols o que são symbols? symbols são um tipo de dado primitivo do JavaScript que é usado para criar identificadores únicos para propriedades de objetos. Eles são imutáveis e não podem ser convertidos para outros tipos de dados, como strings ou números. Cada vez que você cria um symbol, ele é único, mesmo que tenha a mesma descrição. Isso os torna úteis para evitar colisões de nomes em objetos e para criar propriedades privadas.
+const simbolo1 = Symbol("simbolo1");
+const simbolo2 = Symbol("simbolo2");

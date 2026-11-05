@@ -1,3 +1,4 @@
+"use strict";
 const frase = "TypeScript e JavaScript";
 const textoComEspacos = "  exemplo de texto  ";
 console.log("length:", frase.length);
@@ -12,4 +13,3 @@ console.log("replace:", frase.replace("JavaScript", "TypeScript"));
 console.log("split:", frase.split(" "));
 console.log("trim:", textoComEspacos.trim());
 console.log("repeat:", "Oi! ".repeat(2));
-export {};

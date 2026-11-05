@@ -1,5 +1,3 @@
-export {};
-
 const frase: string = "TypeScript e JavaScript";
 const textoComEspacos: string = "  exemplo de texto  ";
 
